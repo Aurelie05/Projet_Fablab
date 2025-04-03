@@ -93,6 +93,10 @@
     .form-left {
         width: 100%; /* Faire en sorte que la partie gauche prenne toute la largeur */
     }
+    .form-container{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 

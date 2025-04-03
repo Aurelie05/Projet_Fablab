@@ -24,7 +24,7 @@
     </div>
     
     <div class="logo">
-        <img src="{{ asset('Assets/Icon.png') }}" alt="Logo INP-HB">
+        <img src="{{ asset('Asset/Icon.png') }}" alt="Logo INP-HB">
     </div>
     
     <p style="font-size: 16px; font-weight: bold;">INP-HB</p>
