@@ -35,6 +35,7 @@
     width: 50%;
     height: 100%; /* ou la hauteur que tu veux */
     overflow: hidden;
+    
 }
 
 .form-right img {
@@ -95,12 +96,62 @@
 }
 
 /* Responsive */
-@media screen and (min-width: 320px) and (max-width: 993px) {
-    .form-right {
-        display: none; /* Cacher l'image ou la partie droite */
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    
+    .form-box{
+        width: 100%;
+        /* margin: 0 auto; */
     }
-    .form-left {
-        width: 100%; /* Faire en sorte que la partie gauche prenne toute la largeur */
+    .form-right {
+        height: 800px; /* Assurez-vous que cette valeur est correcte */
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+    }
+
+    .form-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Assure que l’image remplit tout le cadre sans déformation */
+        display: block;
+    }
+    
+   
+    .form-left{
+        width: 50%;
+    }
+    .form-container{
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1201px) {
+    
+    .form-box{
+        width: 80%;
+        /* margin: 0 auto; */
+    }
+    .form-right {
+        height: 800px; /* Assurez-vous que cette valeur est correcte */
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+    }
+
+    .form-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Assure que l’image remplit tout le cadre sans déformation */
+        display: block;
+    }
+    
+   
+    .form-left{
+        width: 50%;
     }
     .form-container{
         width: 100%;

@@ -44,7 +44,8 @@
     </div>
     <!-- QR Code -->
     <div class="qr-code">
-    <img src="{{ asset('assests/qrcode.png') }}" alt="QR Code">
+    <img src="{{ asset('imagesdjoro/qrcode.png') }}" alt="QR Code">
+
     </div>
 
     <div class="footer">

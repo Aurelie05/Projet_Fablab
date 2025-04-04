@@ -22,7 +22,7 @@ const ConfirmationPage = () => {
         document.body.removeChild(link);
     };
     console.log('Tarif:', tarif);
-    
+
     return (
         <div className="confirmation-container">
             <div className="confirmation-box">
@@ -37,7 +37,7 @@ const ConfirmationPage = () => {
                     className="download-btn" 
                     onClick={() => window.open(`/recu/${numero_enregistrement}`, '_blank')}
                 >
-                    Télécharger la facture en PDF
+                    Télécharger la facture 
                 </button>
             </div>
         </div>
