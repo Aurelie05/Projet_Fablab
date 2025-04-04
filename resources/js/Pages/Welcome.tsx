@@ -28,7 +28,7 @@ export default function Welcome({
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        
+
         console.log("Données envoyées :", data);  // 👀 Vérification
         post('/renseignements', {
             preserveScroll: true,
@@ -45,7 +45,9 @@ export default function Welcome({
             <div className="form-container">
                 <div className="form-box">
                      {/* Partie droite : Image */}
-                     <div className="form-right"></div>
+                    <div className="form-right">
+                        <img src="../Assets/fablab.jpg" alt="oups" />
+                    </div>
                     {/* Partie gauche : Formulaire */}
                     <div className="form-left">
                         <h1 className="form-title">Formulaire de Renseignement</h1>
