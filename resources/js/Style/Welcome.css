@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #ffedcc;
+    background-color: #cacaca;
     /* background-image: url('../Assets/19276.jpg');  */
     background-size: cover; /* Ajouté pour que l'image couvre tout le conteneur */
     background-position: center; /* Ajouté pour centrer l'image */
@@ -31,7 +31,8 @@
 
 .form-right {
     width: 50%;
-    background: url('../Assets/close-up-young-person-taking-notes-notepad-using-pen.jpg') center/cover no-repeat;
+    /* background: url('/'); */
+    background: url('../Assets/fablab.jpg') center/cover no-repeat;
 }
 
 .form-title {
@@ -94,8 +95,8 @@
         width: 100%; /* Faire en sorte que la partie gauche prenne toute la largeur */
     }
     .form-container{
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        /* margin: 0 auto; */
     }
 }
 
