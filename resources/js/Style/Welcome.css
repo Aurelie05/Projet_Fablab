@@ -31,8 +31,9 @@
 
 .form-right {
     width: 50%;
+    /* background-size: contain; */
     /* background: url('/'); */
-    background: url('../Assets/fablab.jpg') center/cover no-repeat;
+    background: url('../Assets/fablab.jpg') center/contain no-repeat;
 }
 
 .form-title {
