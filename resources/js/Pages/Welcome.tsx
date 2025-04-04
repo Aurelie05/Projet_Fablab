@@ -46,7 +46,7 @@ export default function Welcome({
                 <div className="form-box">
                      {/* Partie droite : Image */}
                     <div className="form-right">
-                        <img src="../Assets/fablab.jpg" alt="oups" />
+                        {/* <img src="https://fablab.inphb.ci/assets/fablab.jpg" alt="oups" /> */}
                     </div>
                     {/* Partie gauche : Formulaire */}
                     <div className="form-left">

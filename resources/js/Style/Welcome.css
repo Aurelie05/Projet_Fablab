@@ -30,9 +30,10 @@
 }
 
 .form-right {
-    background-color: #0056b3;
+    background: url("../Assets/fablab.jpg");
+    /* background-color: #0056b3; */
     width: 50%;
-    height: 100vh; /* ou la hauteur que tu veux */
+    height: 100%; /* ou la hauteur que tu veux */
     overflow: hidden;
 }
 
