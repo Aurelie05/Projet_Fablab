@@ -30,7 +30,7 @@
 }
 
 .form-right {
-    background: url("../Assets/fablab.jpg");
+    /* background: url("../Assets/fablab.jpg"); */
     /* background-color: #0056b3; */
     width: 50%;
     height: 100%; /* ou la hauteur que tu veux */
@@ -82,10 +82,10 @@
 .form-submit {
     width: 100%;
     padding: 10px;
-    background: #007bff;
+    background: #0479f7;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s;
 }
