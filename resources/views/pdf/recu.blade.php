@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reçu d'Inscription</title>
     <style>
-        body { font-family: Georgia, serif; margin: 20px;  padding-top: 90px;}
+        body { font-family: Georgia, serif; margin: 20px;  padding-top: 60px;}
         .header { text-align: right; font-size: 14px; margin-bottom: 10px; }
         .content { margin-top: 20px; }
         .logo img { width: 120px; }
@@ -16,7 +16,7 @@
         }
         .logo { margin-bottom: 10px; }
         .logo img { width: 100px; }
-        .qr-code { margin: 20px auto; }
+        .qr-code { margin: 20px auto; text-align: center; }
         .qr-code img { width: 150px;}
         .footer { margin-top: 20px; font-size: 12px; }
     </style>
