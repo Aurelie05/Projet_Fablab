@@ -27,7 +27,7 @@
     </div>
     
     <div class="logo">
-    <img src="https://fablab.inphb.ci/imagesdjoro/icon.png" alt="Logo INP-HB">
+        <img src="https://fablab.inphb.ci/imagesdjoro/icon.png" alt="Logo INP-HB">
 
     </div>
     
@@ -45,7 +45,7 @@
     </div>
     <!-- QR Code -->
     <div class="qr-code">
-    <img src="{{ asset('imagesdjoro/qrcode.png') }}" alt="QR Code">
+    <img src="https://fablab.inphb.ci/imagesdjoro/qrcode.png" alt="QR Code">
 
     </div>
 

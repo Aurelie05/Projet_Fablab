@@ -119,18 +119,24 @@ class RenseignementController extends Controller
    
 
     public function generateRecu($id)
-    {
-        $renseignement = Renseignement::where('numero_enregistrement', $id)->first();
-    
-        if (!$renseignement) {
-            return abort(404, 'Reçu non trouvé');
-        }
-    
-          // Générer le PDF en passant bien les données à la vue
-        $pdf = Pdf::loadView('pdf.recu', ['renseignement' => $renseignement]);
-    
-        return $pdf->download('recu_'.$renseignement->numero_enregistrement.'.pdf');
+{
+    $renseignement = Renseignement::where('numero_enregistrement', $id)->first();
+
+    if (!$renseignement) {
+        return abort(404, 'Reçu non trouvé');
     }
-    
+
+    // ✅ Activer le chargement des images distantes
+    $options = new Options();
+    $options->set('isRemoteEnabled', true);
+
+    // ✅ Appliquer les options à DomPDF
+    $pdf = Pdf::loadView('pdf.recu', ['renseignement' => $renseignement]);
+    $pdf->setOptions([
+        'isRemoteEnabled' => true,
+    ]);
+
+    return $pdf->download('recu_'.$renseignement->numero_enregistrement.'.pdf');
+}
 
 }
