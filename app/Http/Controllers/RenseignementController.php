@@ -5,6 +5,7 @@ use Barryvdh\DomPDF\Facade\Pdf;
 use App\Models\Renseignement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Dompdf\Options; // ✅ Import correct
 use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
 
