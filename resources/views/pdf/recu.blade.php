@@ -27,7 +27,7 @@
     </div>
     
     <div class="logo">
-    <img src="https://fablab.inphb.ci/imagesdjoro/Icon.png" alt="Logo INP-HB">
+    <img src="https://fablab.inphb.ci/imagesdjoro/icon.png" alt="Logo INP-HB">
 
     </div>
     
