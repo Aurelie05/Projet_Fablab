@@ -50,7 +50,7 @@ export default function Welcome({
                     </div>
                     {/* Partie gauche : Formulaire */}
                     <div className="form-left">
-                        <h1 className="form-title">Formulaire de Renseignement</h1>
+                        <h1 className="form-title">Formulaire d'Inscription</h1>
                         <form className="form" onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="nom" className="form-label">Nom</label>
