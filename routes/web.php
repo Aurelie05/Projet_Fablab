@@ -37,4 +37,7 @@ Route::get('/recu/{numero_enregistrement}', [RenseignementController::class, 'ge
 
 
 Route::post('/renseignements', [RenseignementController::class, 'store']);
+
+Route::get('/dashboard', [RenseignementController::class, 'dashboard'])->name('dashboard');
+
 require __DIR__.'/auth.php';

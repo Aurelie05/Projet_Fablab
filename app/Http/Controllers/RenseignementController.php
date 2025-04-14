@@ -140,4 +140,12 @@ class RenseignementController extends Controller
     return $pdf->download('recu_'.$renseignement->numero_enregistrement.'.pdf');
 }
 
+public function dashboard()
+{
+    $renseignements = Renseignement::all();
+
+    return Inertia::render('Dashboard', [
+        'renseignements' => $renseignements,
+    ]);
+}
 }
