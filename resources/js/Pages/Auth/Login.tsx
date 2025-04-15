@@ -40,6 +40,7 @@ export default function Login({
 
             <form onSubmit={submit}>
                 <div>
+                <h1 className="text-center text-primary py-3 " style={{ fontSize: '2rem' }}>Connexion</h1>
                     <InputLabel htmlFor="email" value="Email" />
 
                     <TextInput

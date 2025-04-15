@@ -37,6 +37,7 @@ Route::get('/recu/{numero_enregistrement}', [RenseignementController::class, 'ge
 
 
 Route::post('/renseignements', [RenseignementController::class, 'store']);
+Route::delete('/renseignement/{id}', [RenseignementController::class, 'destroy'])->name('renseignement.destroy');
 
 Route::get('/dashboard', [RenseignementController::class, 'dashboard'])->name('dashboard');
 

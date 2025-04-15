@@ -1,5 +1,5 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head, usePage } from '@inertiajs/react';
+import { Head, usePage, router } from '@inertiajs/react';
 import { PageProps } from '@/types';
 
 type RenseignementType = {
@@ -20,7 +20,11 @@ type Props = {
 
 export default function Dashboard({ auth }: PageProps<{ renseignements: RenseignementType[] }>) {
     const { renseignements } = usePage<Props>().props;
-
+    const handleDelete = (id: number) => {
+        if (confirm('Êtes-vous sûr de vouloir supprimer cet enregistrement ?')) {
+            router.delete(`/renseignement/${id}`);
+        }
+    };
 
     return (
         <AuthenticatedLayout>
@@ -39,6 +43,7 @@ export default function Dashboard({ auth }: PageProps<{ renseignements: Renseign
                                 <th className="border px-4 py-2">WhatsApp</th>
                                 <th className="border px-4 py-2">Numéro Enregistrement</th>
                                 <th className="border px-4 py-2">Tarif</th>
+                                <th className="border px-4 py-2">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -51,6 +56,14 @@ export default function Dashboard({ auth }: PageProps<{ renseignements: Renseign
                                     <td className="border px-4 py-2">{item.numero_whatsapp}</td>
                                     <td className="border px-4 py-2">{item.numero_enregistrement}</td>
                                     <td className="border px-4 py-2">{item.tarif}</td>
+                                    <td className="border px-4 py-2 text-center">
+                                        <button
+                                            onClick={() => handleDelete(item.id)}
+                                            className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                                        >
+                                            Supprimer
+                                        </button>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>

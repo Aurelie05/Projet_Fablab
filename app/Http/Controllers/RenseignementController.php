@@ -148,4 +148,12 @@ public function dashboard()
         'renseignements' => $renseignements,
     ]);
 }
+public function destroy($id)
+{
+    $renseignement = Renseignement::findOrFail($id);
+    $renseignement->delete();
+
+    return redirect()->back()->with('success', 'Inscription supprimée avec succès.');
+}
+
 }

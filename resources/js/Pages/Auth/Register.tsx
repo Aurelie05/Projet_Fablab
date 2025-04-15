@@ -28,6 +28,7 @@ export default function Register() {
 
             <form onSubmit={submit}>
                 <div>
+                <h1 className="text-center text-primary py-3 " style={{ fontSize: '2rem' }}>Inscription</h1>
                     <InputLabel htmlFor="name" value="Name" />
 
                     <TextInput
