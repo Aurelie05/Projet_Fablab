@@ -40,7 +40,7 @@ export default function Dashboard({ auth }: PageProps<{ renseignements: Renseign
                                 <th className="border px-2 py-2 sm:px-4 sm:py-2">Prénoms</th>
                                 <th className="border px-2 py-2 sm:px-4 sm:py-2 hidden md:table-cell">Enfants (5-10)</th>
                                 <th className="border px-2 py-2 sm:px-4 sm:py-2 hidden md:table-cell">Enfants (11-17)</th>
-                                <th className="border px-2 py-2 sm:px-4 sm:py-2 hidden sm:table-cell">WhatsApp</th>
+                                <th className="border px-2 py-2 sm:px-4 sm:py-2 hidden sm:table-cell">Numéro</th>
                                 <th className="border px-2 py-2 sm:px-4 sm:py-2 hidden lg:table-cell">N° Enregistrement</th>
                                 <th className="border px-2 py-2 sm:px-4 sm:py-2">Tarif</th>
                                 <th className="border px-2 py-2 sm:px-4 sm:py-2 text-center">Actions</th>
